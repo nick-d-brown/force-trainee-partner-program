@@ -16,7 +16,7 @@ var users =
                     name: "Yoda",
                     picture: "https://cdn.images.express.co.uk/img/dynamic/36/750x445/837201.jpg",
                     listOfScores: [],
-                    totalScore: 0,
+                    totalScore: 10,
                     catchPhrases: 
                         [
                             "Train yourself to let go of everything you fear to lose.",
@@ -29,7 +29,7 @@ var users =
                     name: "Luke",
                     picture: "http://www.lynkformer.com/template/blog/2012/08/hasbros-star-wars-luke-skywalker-force-fx-lightsaber-collectable-with-removable-blade.jpg",
                     listOfScores: [],
-                    totalScore: 3,
+                    totalScore: 20,
                     catchPhrases:
                         [
                             "But I was going into Tosche Station to pick up some power converters!",
@@ -40,7 +40,7 @@ var users =
                     name: "Han Solo",
                     picture: "http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/07/han-solo-black-glynn-turman-920x598.jpg",
                     listOfScores: [],
-                    totalScore: 5,
+                    totalScore: 30,
                     catchPhrases:
                         [
                             "Great, kid. Don't get cocky",
@@ -53,7 +53,7 @@ var users =
                     name: "Darth Vader",
                     picture: "http://s3.crackedcdn.com/phpimages/article/9/8/8/637988_v3.jpg",
                     listOfScores: [],
-                    totalScore: 7,
+                    totalScore: 40,
                     catchPhrases:
                         [
                             "I find your lack of faith disturbing.",
@@ -67,13 +67,14 @@ var users =
                     name: "Darth Sidius",
                     picture: "https://vignette.wikia.nocookie.net/bioniclecrossovers/images/7/70/Sidious.jpg/revision/latest?cb=20100605193647",
                     listOfScores: [],
-                    totalScore: 10,
+                    totalScore: 50,
                     catchPhrases:
                         [
                             "There is a great disturbance in the Force.",
                             "There is no civility, only politics..",
                             "Are you threatening me, Master Jedi?",
-                            "No... no... no! YOU WILL DIE!"
+                            "No... no... no! YOU WILL DIE!",
+                            "Power, unlimited power!"
                         ]
                 } ,
                

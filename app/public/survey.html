@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Force Finder | Quiz</title>
+    <!-- Google Fonts CDN -->
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!-- CSS External link -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <!-- Jquery CDN -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Boostrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="user-info">
+            <form>
+                <h3>About You</h3>
+                <div class="form-group">
+                    <label for="newTraineeName">Name (Required)</label>
+                    <input type="text" class="form-control" id="userInputName" placeholder="ie. Darth Sidious">
+                </div>
+                <div class="form-group">
+                    <label for="newTraineePicture">Link to Photo Image of you as a prospective jedi/sith apprentice (Required)</label>
+                    <input type="text" class="form-control" id="userInputProfileImage" placeholder="-place link here-">
+                </div>
+                <div class="form-group">
+                    <label for="newTraineeCatchphrase">What is your catchphrase?</label>
+                    <input type="text" class="form-control" id="userInputCatchphrase" placeholder="i.e. I'll try to not be bad at this..." maxlength="80">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="quiz-questins">
+            <div id="q1Container">
+                <h3>Question 1</h3>
+                <p>Pick your favorite color.</p>
+                <select class="form-control">
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>If this is about a lightsaber, so help me...</option>
+                    <option>Red</option>
+                    <option>Black</option>
+                </select>
+            </div>
+            <div id="q2Container">
+                <h3>Question 2</h3>
+                <p>Which word Describes you best?</p>
+                <select class="form-control">
+                    <option>Patient</option>
+                    <option>Rebelious</option>
+                    <option>This is stupid, I was told there would be money. </option>
+                    <option>Vengance</option>
+                    <option>Power</option>
+                </select>
+            </div>
+            <div id="q3Container">
+                <h3>Question 3</h3>
+                <p>You're walking into the library late at night to overthrow the government and destroy the corrup Jedi, what do you do next?</p>
+                <select class="form-control">
+                    <option>Jedi I am, do I would not.</option>
+                    <option>Leave and rethink my life descisions and approach the problem with a more rational mind.</option>
+                    <option>Is there money involved?</option>
+                    <option>Crush them all.</option>
+                    <option>What do you think? I was the one to orchastrate the whole thing.</option>
+                </select>
+            </div>
+            <div id="q4Container">
+                <h3>Pick an ability.</h3>
+                <p></p>
+                <select class="form-control">
+                    <option>Meditation</option>
+                    <option>Force Push</option>
+                    <option></option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div id="q5Container">
+                <h3>Question 5</h3>
+                <p></p>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div id="q6Container">
+                <h3>Question 6</h3>
+                <p></p>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div id="q7Container">
+                <h3>Question 7</h3>
+                <p></p>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div id="q8Container">
+                <h3>Question 8</h3>
+                <p></p>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div id="q9Container">
+                <h3>Question 9</h3>
+                <p></p>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div id="q10Container">
+                <h3>Question 10</h3>
+                <p></p>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="submit">
+            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+
+        <!-- ============================ -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- ============================ -->
+<!-- =============JS LOGIC=============== -->
+<script type="text/javascript">
+
+    // create table object from make reservation button
+    $("#add-btn").on("click", function (event) {
+        event.preventDefault();
+        var newTrainee = {
+            name: $("#name").val().trim(),
+            number: $("#picture").val(),
+            listOfScores: [], //list of their score
+            totalScore: null,
+            catchPhrase: $("#catchPhrase").val().trim()
+        };
+        // posts this new reservation to postman
+        $.post("/api/Trainees", newTrainee)
+            .then(function (data) {
+                console.log("add.html", data);
+                alert("Adding a Trainee...");
+            });
+    });
+</script>
+<!-- ============================ -->
+        <footer class="">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a> |
+                    <a href="https://github.com/nick-d-brown">GitHub Repo</a>
+                </p>
+            </div>
+            <p>&copy; 2018 Nick Brown</p>
+        </footer>
+    </div>
+  
+</body>
+</html>
+
+
+            

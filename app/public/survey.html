@@ -21,143 +21,406 @@
     <!-- Boostrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <style>
+    .modal-image {
+        width: 100%;
+    }
+
+
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="user-info">
-            <form>
+        <form>
+            <div class="user-info">
                 <h3>About You</h3>
                 <div class="form-group">
                     <label for="newTraineeName">Name (Required)</label>
-                    <input type="text" class="form-control" id="userInputName" placeholder="ie. Darth Sidious">
+                    <input type="text" class="form-control" id="userInputName" placeholder="ie. Darth Sidious" required>
                 </div>
                 <div class="form-group">
                     <label for="newTraineePicture">Link to Photo Image of you as a prospective jedi/sith apprentice (Required)</label>
-                    <input type="text" class="form-control" id="userInputProfileImage" placeholder="-place link here-">
+                    <input type="text" class="form-control" id="userInputProfileImage" placeholder="-place link here-" required>
                 </div>
                 <div class="form-group">
                     <label for="newTraineeCatchphrase">What is your catchphrase?</label>
-                    <input type="text" class="form-control" id="userInputCatchphrase" placeholder="i.e. I'll try to not be bad at this..." maxlength="80">
+                    <input type="text" class="form-control" id="userInputCatchphrase" placeholder="i.e. I'll try to not be bad at this..." maxlength="80" required>
                 </div>
-            </form>
-        </div>
-        <hr>
-        <div class="quiz-questins">
-            <div id="q1Container">
-                <h3>Question 1</h3>
-                <p>Pick your favorite color.</p>
-                <select class="form-control">
-                    <option>Blue</option>
-                    <option>Green</option>
-                    <option>If this is about a lightsaber, so help me...</option>
-                    <option>Red</option>
-                    <option>Black</option>
-                </select>
             </div>
-            <div id="q2Container">
-                <h3>Question 2</h3>
-                <p>Which word Describes you best?</p>
-                <select class="form-control">
-                    <option>Patient</option>
-                    <option>Rebelious</option>
-                    <option>This is stupid, I was told there would be money. </option>
-                    <option>Vengance</option>
-                    <option>Power</option>
-                </select>
+            <hr>
+            <div class="quiz-questins">
+                <div id="q1Container">
+                    <h3>Question 1</h3>
+                    <p>Pick your favorite color.</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q1Radios" id="q1Radios1" value="1"> Blue
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q1Radios" id="q1Radios2" value="2"> Green
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q1Radios" id="q1Radios3" value="3" checked> If this is about a lightsaber, so help me...
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q1Radios" id="q1Radios4" value="4"> Red
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q1Radios" id="q1Radios5" value="5"> Black
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Blue</option>
+                        <option>Green</option>
+                        <option>If this is about a lightsaber, so help me...</option>
+                        <option>Red</option>
+                        <option>Black</option>
+                    </select> -->
+                </div>
+                <div id="q2Container">
+                    <h3>Question 2</h3>
+                    <p>Which word Describes you best?</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q2Radios" id="q2Radios1" value="1"> Patient
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q2Radios" id="q2Radios2" value="2"> Rebelious
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q2Radios" id="q2Radios3" value="3" checked> This is stupid, I was told there would be money.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q2Radios" id="q2Radios4" value="4"> Vengance
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q2Radios" id="q2Radios5" value="5"> Power
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Patient</option>
+                        <option>Rebelious</option>
+                        <option>This is stupid, I was told there would be money. </option>
+                        <option>Vengance</option>
+                        <option>Power</option>
+                    </select> -->
+                </div>
+                <div id="q3Container">
+                    <h3>Question 3</h3>
+                    <p>You're walking into the library late at night to overthrow the government and destroy the corrupt Jedi, what do you do next?</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q3Radios" id="q3Radios1" value="1"> Jedi I am, do I would not.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q3Radios" id="q3Radios2" value="2"> Leave and rethink my life descisions and approach the problem with a more rational mind.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q3Radios" id="q3Radios3" value="3" checked> Is there money involved?
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q3Radios" id="q3Radios4" value="4"> Crush them all.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q3Radios" id="q3Radios5" value="5"> What do you think? I was the one to orchastrate the whole thing
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Jedi I am, do I would not.</option>
+                        <option>Leave and rethink my life descisions and approach the problem with a more rational mind.</option>
+                        <option>Is there money involved?</option>
+                        <option>Crush them all.</option>
+                        <option>What do you think? I was the one to orchastrate the whole thing.</option>
+                    </select> -->
+                </div>
+                <div id="q4Container">
+                    <h3>Question 4</h3>
+                    <p>Pick an ability.</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q4Radios" id="q4Radios1" value="1"> Meditation
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q4Radios" id="q4Radios2" value="2"> Force Push
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q4Radios" id="q4Radios3" value="3" checked> Good Looks
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q4Radios" id="q4Radios4" value="4"> Force Choke
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q4Radios" id="q4Radios5" value="5"> Force Lightning
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Meditation</option>
+                        <option>Force Push</option>
+                        <option>Good Looks</option>
+                        <option>Force Choke</option>
+                        <option>Force Lightning</option>
+                    </select> -->
+                </div>
+                <div id="q5Container">
+                    <h3>Question 5</h3>
+                    <p>What is your stance on puppies?</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q5Radios" id="q5Radios1" value="1"> Distraction they are.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q5Radios" id="q5Radios2" value="2"> I think they are pretty cute.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q5Radios" id="q5Radios3" value="3" checked> They're great until the get to be 7' 6", smelly, and compain about upgrading the hyperdrive
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q5Radios" id="q5Radios4" value="4"> I LOVE PUPPIES! (especially little ones focused on destroying my enemies)
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q5Radios" id="q5Radios5" value="5"> I have a cat.
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Distraction they are. </option>
+                        <option>I think they are pretty cute.</option>
+                        <option>They're great until the get to be 7' 6", smelly, and compain about upgrading the hyperdrive</option>
+                        <option>I LOVE PUPPIES! (especially little ones focused on destroying my enemies)</option>
+                        <option>I have a cat.</option>
+                    </select> -->
+                </div>
+                <div id="q6Container">
+                    <h3>Question 6</h3>
+                    <p>Pick your vice.</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q6Radios" id="q6Radios1" value="1"> Babbling like an old man
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q6Radios" id="q6Radios2" value="2"> Avoiding chores on the farm
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q6Radios" id="q6Radios3" value="3" checked> Gambling/Shooting my Ccmpetition under the table
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q6Radios" id="q6Radios4" value="4"> Pod Racing
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q6Radios" id="q6Radios5" value="5"> Cackling Maniacly
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Babbling like an old man</option>
+                        <option>Avoiding chores on the farm</option>
+                        <option>Gambling/Shooting my Ccmpetition under the table</option>
+                        <option>Pod Racing</option>
+                        <option>Cackling Maniacly</option>
+                    </select> -->
+                </div>
+                <div id="q7Container">
+                    <h3>Question 7</h3>
+                    <p>Who was your first love?</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q7Radios" id="q7Radios1" value="1"> Love. Attraction. A Jedi craves not these things.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q7Radios" id="q7Radios2" value="2"> I don't want to talk about it.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q7Radios" id="q7Radios3" value="3" checked> Money. But then came along this princess...
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q7Radios" id="q7Radios4" value="4"> I was 9 when we met, and her name was Padme.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q7Radios" id="q7Radios5" value="5"> The only love I feel is in the darkness of my soul.
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Love. Attraction.  A Jedi craves not these things.</option>
+                        <option>I don't want to talk about it.</option>
+                        <option>Money. But then came along this princess...</option>
+                        <option>I was 9 when we met, and her name was Padme.</option>
+                        <option>The only love I feel is in the darkness of my soul.</option>
+                    </select> -->
+                </div>
+                <div id="q8Container">
+                    <h3>Question 8</h3>
+                    <p>What would you do in the case of a fire?</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q8Radios" id="q8Radios1" value="1"> Meditate
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q8Radios" id="q8Radios2" value="2"> Look for people to help out
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q8Radios" id="q8Radios3" value="3" checked> Run as fast as I can with perfectly quaffed hair!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q8Radios" id="q8Radios4" value="4"> Choke the person who started the fire
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q8Radios" id="q8Radios5" value="5"> Wait for the Imperial Guard to carry my throne out
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>Meditate</option>
+                        <option>Look for people to help out</option>
+                        <option>Run as fast as I can with perfectly quaffed hair!</option>
+                        <option>Choke the person who started the fire</option>
+                        <option>Wait for the Imperial Guard to carry my throne out</option>
+                    </select> -->
+                </div>
+                <div id="q9Container">
+                    <h3>Question 9</h3>
+                    <p>how many original fingers do you have left on both hands?</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q9Radios" id="q9Radios1" value="1"> All six green ones I still have.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q9Radios" id="q9Radios2" value="2"> Technically? Five. I'm missing a hand.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q9Radios" id="q9Radios3" value="3" checked> Ten. Is there any other answer?
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q9Radios" id="q9Radios4" value="4"> I am basically a robot. So, none.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q9Radios" id="q9Radios5" value="5"> Do cracked curled evil hands count?
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>All six green ones I still have.</option>
+                        <option>Technically? Five. I'm missing a hand.</option>
+                        <option>Ten. Is there any other answer?</option>
+                        <option>I am basically a robot. So, none.</option>
+                        <option>Do cracked curled evil hands count?</option>
+                    </select> -->
+                </div>
+                <div id="q10Container">
+                    <h3>Question 10</h3>
+                    <p>Do you require power and influence over people to feel special?</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q10Radios" id="q10Radios1" value="1"> 1 (Strongly disagree, I'm an old crazy dude.)
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q10Radios" id="q10Radios2" value="2"> 2
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q10Radios" id="q10Radios3" value="3" checked> 3
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q10Radios" id="q10Radios4" value="4"> 4
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q10Radios" id="q10Radios5" value="5"> 5 (Strongly agree, because of the Unlimited Power.)
+                        </label>
+                    </div>
+                    <!-- <select class="form-control">
+                        <option>1 (Strongly disagree, I'm an old crazy dude.)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree, because of the Unlimited Power.)</option>
+                    </select> -->
+                </div>
             </div>
-            <div id="q3Container">
-                <h3>Question 3</h3>
-                <p>You're walking into the library late at night to overthrow the government and destroy the corrup Jedi, what do you do next?</p>
-                <select class="form-control">
-                    <option>Jedi I am, do I would not.</option>
-                    <option>Leave and rethink my life descisions and approach the problem with a more rational mind.</option>
-                    <option>Is there money involved?</option>
-                    <option>Crush them all.</option>
-                    <option>What do you think? I was the one to orchastrate the whole thing.</option>
-                </select>
-            </div>
-            <div id="q4Container">
-                <h3>Pick an ability.</h3>
-                <p></p>
-                <select class="form-control">
-                    <option>Meditation</option>
-                    <option>Force Push</option>
-                    <option></option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-            <div id="q5Container">
-                <h3>Question 5</h3>
-                <p></p>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-            <div id="q6Container">
-                <h3>Question 6</h3>
-                <p></p>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-            <div id="q7Container">
-                <h3>Question 7</h3>
-                <p></p>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-            <div id="q8Container">
-                <h3>Question 8</h3>
-                <p></p>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-            <div id="q9Container">
-                <h3>Question 9</h3>
-                <p></p>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-            <div id="q10Container">
-                <h3>Question 10</h3>
-                <p></p>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-        </div>
+        </form>
         <hr>
         <div class="submit">
-            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="add-btn">Submit</button>
         </div>
 
+        <!-- ==============Radios============== -->
+        <div></div>
+      
         <!-- ============================ -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-        Launch demo modal
-    </button>
+        <!-- ============Modal================ -->
     
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -167,14 +430,17 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <h4 class="modal-title" id="myModalLabel">Your Mentor</h4>
+                    <div id="modalMentorData"></div>
+                    <hr>
+                    <h4 class="modal-title" id="myModalLabel">Your fellow Mentee</h4>
+                    <div id="modalMenteeData"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <a href="/"><button type="button" class="btn btn-primary" id="modalToHome">Home</button></a>
                 </div>
             </div>
         </div>
@@ -183,29 +449,124 @@
 <!-- =============JS LOGIC=============== -->
 <script type="text/javascript">
 
-    // create table object from make reservation button
+    // create newTrainee object submit survey button
     $("#add-btn").on("click", function (event) {
+        var inputName = $("#userInputName").val().trim();
+        var inputImage = $("#userInputProfileImage").val();
+        var inputcatchPhrase = $("#userInputCatchphrase").val().trim();
+        var q1 = parseInt($('input[name=q1Radios]:checked').val());
+        var q2 = parseInt($('input[name=q2Radios]:checked').val());
+        var q3 = parseInt($('input[name=q3Radios]:checked').val());
+        var q4 = parseInt($('input[name=q4Radios]:checked').val());
+        var q5 = parseInt($('input[name=q5Radios]:checked').val());
+        var q6 = parseInt($('input[name=q6Radios]:checked').val());
+        var q7 = parseInt($('input[name=q7Radios]:checked').val());
+        var q8 = parseInt($('input[name=q8Radios]:checked').val());
+        var q9 = parseInt($('input[name=q9Radios]:checked').val());
+        var q9 = parseInt($('input[name=q9Radios]:checked').val());
+        var q10 = parseInt($('input[name=q10Radios]:checked').val());
+        
+        console.log(q1);
+        
+
         event.preventDefault();
         var newTrainee = {
-            name: $("#name").val().trim(),
-            number: $("#picture").val(),
-            listOfScores: [], //list of their score
-            totalScore: null,
-            catchPhrase: $("#catchPhrase").val().trim()
+            name: inputName,
+            picture: inputImage,
+            listOfScores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10], //list of their score
+            totalScore:  0,
+            catchPhrase: inputcatchPhrase
         };
+        console.log(newTrainee.listOfScores);
+        
+        
+        newTrainee.totalScore = scoreAdd(newTrainee.listOfScores, newTrainee.totalScore, newTrainee);
+        console.log(newTrainee);
+        
+        
+        
         // posts this new reservation to postman
-        $.post("/api/Trainees", newTrainee)
-            .then(function (data) {
-                console.log("add.html", data);
-                alert("Adding a Trainee...");
+        $.post("/api/user_list", newTrainee,
+            function (data) {
+                console.log(data); //true
             });
+            //=======================================================
+        // After the users data is posted make ajax call to receive all data back
+           runUserQuery();
     });
+  
+
+//global use functions
+    function scoreAdd(arr, dest, variab) {
+        console.log(arr + ' ad ' + dest);
+        for (let i = 0; i < arr.length; i++) {
+            dest+=arr[i];
+        }
+        return dest;
+        console.log(dest);
+        console.log(variab);
+        
+        
+    }
+
+
+   function runUserQuery(){
+       var currentURL = window.location.origin;
+
+        $.ajax({ url: currentURL + "/api/user_list", method: "GET" })
+           .then(function (userData) {
+                console.log(userData);
+                var enteredData = userData.trainees[userData.trainees.length-1]; // gets data of trainee just added
+                console.log(parseInt(enteredData.totalScore));
+                var userMentor = userData.mentors[findMentor(parseInt(enteredData.totalScore))];
+                console.log(userMentor);
+                
+                // append data and manipulate dom
+                $("#modalMentorData").append("<h4>" + userMentor.name + "</h4>"
+                                              + "<h6>" + userMentor.catchPhrases[Math.floor(Math.random()*userMentor.catchPhrases.length)] + "</h6>"
+                                              + "<img src='" + userMentor.picture + "' class='modal-image'>");
+
+           });
+   }
+
+   function findMentor(userScoreTotal){
+     
+    if (userScoreTotal <= 10){
+          // return yoda
+          console.log("yoda");
+          return 0
+          
+      } else if (userScoreTotal > 10 && userScoreTotal <= 25) {
+          console.log("luke");
+          return 1
+          
+      } else if (userScoreTotal > 25 && userScoreTotal < 40) {
+          console.log("han");
+          return 2
+          
+      } else if (userScoreTotal >= 40 && userScoreTotal < 50) {
+          console.log("vader");
+          return 3
+          
+      } else {
+          console.log("emp");
+          return 4
+          
+          
+      }
+   }
+
+   function findFellowMentee(){
+
+   }
+
 </script>
-<!-- ============================ -->
+
         <footer class="">
             <div class="container">
                 <p>
-                    <a href="/api/friends">API Friends List</a> |
+                    <a href="/api/user_list">API Friends List</a> |
+                    <a href="/">Home Page</a> |
                     <a href="https://github.com/nick-d-brown">GitHub Repo</a>
                 </p>
             </div>

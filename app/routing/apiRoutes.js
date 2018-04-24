@@ -1,14 +1,19 @@
 
-var user = require("../data.friends");
+var userData = require("../data/users");
 
-module.exports = function (app) {
+module.exports = function(app) {
     
-    app.get("/api/friend_list", function (req, res) {
-        return res.json(friendList);
+    app.get("/api/user_list", function (req, res) {
+        return res.json(userData);
     });
 
-    app.post("/api/friend_list", function (req, res) {
-        return res.json(friendList);
+    app.post("/api/user_list", function (req, res) {
+        // console.log(req);
+        console.log(req.body);
+        
+        userData.trainees.push(req.body);
+        // userData.users.trainees.push(req.body);
+        res.json(true);
     });
   
 }

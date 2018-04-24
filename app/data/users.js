@@ -71,6 +71,14 @@ var users =
             ],
         trainees:
             [
-                {},
+                {
+                    name: "Joe Joesone",
+                    picture: "http://i.dailymail.co.uk/i/pix/2014/12/14/240BA87700000578-2873641-image-a-7_1418580687176.jpg",
+                    listOfScores: [5,5,5,5,5,5,5,5,5,5],
+                    totalScore: 50,
+                    catchPhrases:
+                            "I am the force"
+                        },
             ]
-    }
+    };
+    module.exports = users;

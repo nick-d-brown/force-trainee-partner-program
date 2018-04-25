@@ -72,13 +72,45 @@ var users =
         trainees:
             [
                 {
-                    name: "Joe Joesone",
+                    name: "Tommy Chong",
+                    picture: "http://www.whowasvincegironda.com/images/tommy-chong-workout.jpg",
+                    listOfScores: [1,1,1,1,1,1,1,1,1,1],
+                    totalScore: 10,
+                    catchPhrase:
+                            "Just Let it be man.."
+                },
+                {
+                    name: "Rey",
+                    picture: "https://lumiere-a.akamaihd.net/v1/images/rey-main_73d146de.jpeg?region=0%2C0%2C1560%2C878&width=768",
+                    listOfScores: [2,2,2,2,2,2,2,2,2,2],
+                    totalScore: 20,
+                    catchPhrase:
+                            "I think I can handle myself."
+                },
+                {
+                    name: "Young Han Solo",
+                    picture: "http://www.theforce.net/2018/han-solo-alden-2.jpg",
+                    listOfScores: [3,3,3,3,3,3,3,3,3,3],
+                    totalScore: 30,
+                    catchPhrase:
+                            "Listen, I think I know a thing or two about how to make money. OK?"
+                },
+                {
+                    name: "Your Little Sister",
+                    picture: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Hello_kitty_character_portrait.png/200px-Hello_kitty_character_portrait.png",
+                    listOfScores: [4,4,4,4,4,4,4,4,4,4],
+                    totalScore: 40,
+                    catchPhrase:
+                            "I'm telling mm you made this app"
+                },
+                {
+                    name: "The guy at the local comic book store",
                     picture: "http://i.dailymail.co.uk/i/pix/2014/12/14/240BA87700000578-2873641-image-a-7_1418580687176.jpg",
                     listOfScores: [5,5,5,5,5,5,5,5,5,5],
                     totalScore: 50,
-                    catchPhrases:
-                            "I am the force"
-                        },
+                    catchPhrase:
+                            "I know everything about the dark side"
+                },
             ]
     };
     module.exports = users;

@@ -16,7 +16,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <!-- Jquery CDN -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <!-- Boostrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
@@ -432,14 +432,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h4 class="modal-title" id="myModalLabel">Your Mentor</h4>
+                    <h3 class="modal-title" id="myModalLabel">Your Mentor</h4>
                     <div id="modalMentorData"></div>
                     <hr>
                     <h4 class="modal-title" id="myModalLabel">Your fellow Mentee</h4>
                     <div id="modalMenteeData"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Close</button>
                     <a href="/"><button type="button" class="btn btn-primary" id="modalToHome">Home</button></a>
                 </div>
             </div>
@@ -495,6 +495,16 @@
            runUserQuery();
     });
   
+    // clear the divs with charater match and inputs
+    $("#modalClose").on("click", function () {
+        $("#userInputName").val("");
+        $("#userInputProfileImage").val("");
+        $("#userInputCatchphrase").val("");
+        $("#modalMentorData").empty();
+        $("#modalMenteeData").empty();
+
+    })
+
 
 //global use functions
     function scoreAdd(arr, dest, variab) {
@@ -520,11 +530,19 @@
                 console.log(parseInt(enteredData.totalScore));
                 var userMentor = userData.mentors[findMentor(parseInt(enteredData.totalScore))];
                 console.log(userMentor);
+                var userPairedMentee = userData.trainees[findFellowMentee(userData.trainees, parseInt(enteredData.totalScore))];
+                console.log(findFellowMentee(userData.trainees, parseInt(enteredData.totalScore)));
+                
+                console.log(userPairedMentee);
+                
                 
                 // append data and manipulate dom
                 $("#modalMentorData").append("<h4>" + userMentor.name + "</h4>"
                                               + "<h6>" + userMentor.catchPhrases[Math.floor(Math.random()*userMentor.catchPhrases.length)] + "</h6>"
                                               + "<img src='" + userMentor.picture + "' class='modal-image'>");
+                $("#modalMenteeData").append("<h4>" + userPairedMentee.name + "</h4>"
+                                              + "<h6>" + userPairedMentee.catchPhrase + "</h6>"
+                                              + "<img src='" + userPairedMentee.picture + "' class='modal-image'>");
 
            });
    }
@@ -556,9 +574,52 @@
       }
    }
 
-   function findFellowMentee(){
-
-   }
+   function findFellowMentee(mentteArr, userScoreTotal){
+       // check if user score is equal to or within 9
+    //    console.log(mentteArr.length);
+    //    console.log(userScoreTotal);
+    //    console.log(mentteArr[2].totalScore);
+    
+       
+       for (i = mentteArr.length-2; i>=0; i--) {
+        //    console.log(mentteArr[i]);
+           
+           if (userScoreTotal === parseInt(mentteArr[i].totalScore)) {
+        //    if (userScoreTotal === parseInt(parseInt(mentteArr[i].totalScore))) {
+               // use this person
+               console.log("1"+i);
+               
+               return i;
+           } 
+        }
+       for (i = (mentteArr.length-1); i>=0; i--) {
+           if ((50 - (userScoreTotal + parseInt(mentteArr[i].totalScore)) <= 2 )) {
+               // use this person
+               console.log("2"+i);
+               
+               return i;
+           } 
+        }
+       for (i = (mentteArr.length-1); i>=0; i--) {
+           if ((50 - (userScoreTotal + parseInt(mentteArr[i].totalScore)) <= 5 )) {
+               // use this person
+               console.log("3"+i);
+               
+               return i;
+           } 
+        }
+       for (i = (mentteArr.length-1); i>=0; i--) {
+           if ((50 - (userScoreTotal + parseInt(mentteArr[i].totalScore)) <= 10 )) {
+               // use this person
+               console.log("4"+i);
+               
+               return i;
+           } 
+        }
+           
+           
+           
+       }
 
 </script>
 

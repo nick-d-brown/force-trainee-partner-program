@@ -12,13 +12,78 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <!-- CSS External link -->
-    <link rel="stylesheet" href="./assets/style.css">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
     <!-- Bootstrap CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <!-- Jquery CDN -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <style>
+
+        
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: #0099F7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Home Page */
+
+        /* JumboTron */
+    .jumbotron {
+        margin: 2% 0;
+        padding: 5px;    
+    }
+
+    .jumboInner {
+        text-align: center;
+        justify-content: center;
+    }
+
+        /* footer */
+
+    .footer {
+        position: absolute;
+        bottom: 0px; 
+        width: 100%;
+    }    
+
+    .footer-links {
+        color: white;
+    }
+
+    .copyright {
+        text-align: center;
+        color: white;
+    }
+
+    .link-styling {
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 4px;
+        color: white;
+    }
+
+    .link-styling:hover {
+        text-decoration: none;
+        border: 1px solid rgb(167, 167, 167);
+        padding: 4px;
+        color:rgb(167, 167, 167);
+        position: relative;
+        top:1px;
+        left: 1px;
+    }
+
+  
+    </style>
 </head>
 
 <body>
@@ -35,13 +100,13 @@
                     Do you enjoy staging a rebellion with little furry creatures in the forest?</p>
                 <p>
                 <p class="lead">
-                    Or would you prefer long walks late at night in the library? (you fans of the dark side understand the joke)
+                    Or would you rather blow up planets?
                 </p>
                 <p class="lead">
                     Take our simple quiz and find Out if you are meant for a path on the dark side or the light side!
                 </p>
                 <p>
-                    NEW! Get paired with your most compatable force mentor and a fellow trainee at no additional cost!
+                    <strong>NEW! Get paired with your most compatable force mentor and a fellow trainee for free</strong>!
                 </p>
                 <p>
                     <a class="btn btn-lg btn-success" href="/survey" role="button">Take the Quiz!</a>
@@ -50,17 +115,16 @@
 
         </div>
 
-        <footer class="footer">
-            <div class="container">
-                <p>
-                    <a href="/api/user_list">API Friends List</a> |
-                    <a href="https://github.com/nick-d-brown">GitHub Repo</a>
-                </p>
-            </div>
-            <p>&copy; 2018 Nick Brown</p>
-        </footer>
-
     </div>
+    <footer class="footer center">
+        <div>
+            <p class="footer-links">
+                <a href="/api/user_list" class="link-styling">API Friends List</a>
+                <a href="https://github.com/nick-d-brown/force-trainee-partner-program" class="link-styling">GitHub Repo</a>
+            </p>
+            <p class="copyright">&copy; 2018 Nick Brown</p> 
+        </div>
+    </footer>
     <!-- /container -->
 
 </body>

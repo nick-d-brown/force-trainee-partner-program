@@ -22,18 +22,92 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
     <style>
+    html, body {
+        /* margin: 0; */
+        /* padding: 0; */
+        background: #0099F7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Home Page */
+
+        /* JumboTron */
+    .jumbotron {
+        margin: 2% 0;
+        padding: 5px;    
+    }
+
+    .jumboInner {
+        text-align: center;
+        justify-content: center;
+    }
+
+        /* footer */
+
+    .survey-footer {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        margin: 54px 0px;
+    }    
+
+    .footer-links {
+        color: white;
+    }
+
+    .copyright {
+        text-align: center;
+        color: white;
+    }
+
+    .link-styling {
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 4px;
+        color: white;
+    }
+
+    .link-styling:hover {
+        text-decoration: none;
+        border: 1px solid rgb(167, 167, 167);
+        padding: 4px;
+        color:rgb(167, 167, 167);
+        position: relative;
+        top:1px;
+        left: 1px;
+    }
+
+    .container-special-style {
+        margin: 30px auto;
+    }
+    
     .modal-image {
         width: 100%;
+    }
+
+    .modal-body {
+        color: black;
+    }
+
+    #modalHomeAnchor {
+        color: white;
     }
 
 
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container container-special-style">
         <form>
             <div class="user-info">
-                <h3>About You</h3>
+                <h1>About You</h1>
                 <div class="form-group">
                     <label for="newTraineeName">Name (Required)</label>
                     <input type="text" class="form-control" id="userInputName" placeholder="ie. Darth Sidious" required>
@@ -77,13 +151,6 @@
                             <input type="radio" name="q1Radios" id="q1Radios5" value="5"> Black
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Blue</option>
-                        <option>Green</option>
-                        <option>If this is about a lightsaber, so help me...</option>
-                        <option>Red</option>
-                        <option>Black</option>
-                    </select> -->
                 </div>
                 <div id="q2Container">
                     <h3>Question 2</h3>
@@ -113,13 +180,6 @@
                             <input type="radio" name="q2Radios" id="q2Radios5" value="5"> Power
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Patient</option>
-                        <option>Rebelious</option>
-                        <option>This is stupid, I was told there would be money. </option>
-                        <option>Vengance</option>
-                        <option>Power</option>
-                    </select> -->
                 </div>
                 <div id="q3Container">
                     <h3>Question 3</h3>
@@ -149,13 +209,6 @@
                             <input type="radio" name="q3Radios" id="q3Radios5" value="5"> What do you think? I was the one to orchastrate the whole thing
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Jedi I am, do I would not.</option>
-                        <option>Leave and rethink my life descisions and approach the problem with a more rational mind.</option>
-                        <option>Is there money involved?</option>
-                        <option>Crush them all.</option>
-                        <option>What do you think? I was the one to orchastrate the whole thing.</option>
-                    </select> -->
                 </div>
                 <div id="q4Container">
                     <h3>Question 4</h3>
@@ -185,13 +238,6 @@
                             <input type="radio" name="q4Radios" id="q4Radios5" value="5"> Force Lightning
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Meditation</option>
-                        <option>Force Push</option>
-                        <option>Good Looks</option>
-                        <option>Force Choke</option>
-                        <option>Force Lightning</option>
-                    </select> -->
                 </div>
                 <div id="q5Container">
                     <h3>Question 5</h3>
@@ -221,13 +267,6 @@
                             <input type="radio" name="q5Radios" id="q5Radios5" value="5"> I have a cat.
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Distraction they are. </option>
-                        <option>I think they are pretty cute.</option>
-                        <option>They're great until the get to be 7' 6", smelly, and compain about upgrading the hyperdrive</option>
-                        <option>I LOVE PUPPIES! (especially little ones focused on destroying my enemies)</option>
-                        <option>I have a cat.</option>
-                    </select> -->
                 </div>
                 <div id="q6Container">
                     <h3>Question 6</h3>
@@ -257,13 +296,6 @@
                             <input type="radio" name="q6Radios" id="q6Radios5" value="5"> Cackling Maniacly
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Babbling like an old man</option>
-                        <option>Avoiding chores on the farm</option>
-                        <option>Gambling/Shooting my Ccmpetition under the table</option>
-                        <option>Pod Racing</option>
-                        <option>Cackling Maniacly</option>
-                    </select> -->
                 </div>
                 <div id="q7Container">
                     <h3>Question 7</h3>
@@ -293,13 +325,6 @@
                             <input type="radio" name="q7Radios" id="q7Radios5" value="5"> The only love I feel is in the darkness of my soul.
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Love. Attraction.  A Jedi craves not these things.</option>
-                        <option>I don't want to talk about it.</option>
-                        <option>Money. But then came along this princess...</option>
-                        <option>I was 9 when we met, and her name was Padme.</option>
-                        <option>The only love I feel is in the darkness of my soul.</option>
-                    </select> -->
                 </div>
                 <div id="q8Container">
                     <h3>Question 8</h3>
@@ -329,13 +354,6 @@
                             <input type="radio" name="q8Radios" id="q8Radios5" value="5"> Wait for the Imperial Guard to carry my throne out
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>Meditate</option>
-                        <option>Look for people to help out</option>
-                        <option>Run as fast as I can with perfectly quaffed hair!</option>
-                        <option>Choke the person who started the fire</option>
-                        <option>Wait for the Imperial Guard to carry my throne out</option>
-                    </select> -->
                 </div>
                 <div id="q9Container">
                     <h3>Question 9</h3>
@@ -365,13 +383,6 @@
                             <input type="radio" name="q9Radios" id="q9Radios5" value="5"> Do cracked curled evil hands count?
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>All six green ones I still have.</option>
-                        <option>Technically? Five. I'm missing a hand.</option>
-                        <option>Ten. Is there any other answer?</option>
-                        <option>I am basically a robot. So, none.</option>
-                        <option>Do cracked curled evil hands count?</option>
-                    </select> -->
                 </div>
                 <div id="q10Container">
                     <h3>Question 10</h3>
@@ -401,13 +412,6 @@
                             <input type="radio" name="q10Radios" id="q10Radios5" value="5"> 5 (Strongly agree, because of the Unlimited Power.)
                         </label>
                     </div>
-                    <!-- <select class="form-control">
-                        <option>1 (Strongly disagree, I'm an old crazy dude.)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly agree, because of the Unlimited Power.)</option>
-                    </select> -->
                 </div>
             </div>
         </form>
@@ -416,10 +420,17 @@
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="add-btn">Submit</button>
         </div>
 
-        <!-- ==============Radios============== -->
-        <div></div>
-      
-        <!-- ============================ -->
+    </div>
+                <footer class="survey-footer center">
+                    <div>
+                        <p class="footer-links">
+                            <a href="/api/user_list" class="link-styling">API Friends List</a>
+                            <a href="/" class="link-styling">Home Page</a>
+                            <a href="https://github.com/nick-d-brown/force-trainee-partner-program" class="link-styling">GitHub Repo</a>
+                        </p>
+                        <p class="copyright">&copy; 2018 Nick Brown</p>
+                    </div>
+                </footer>
         <!-- ============Modal================ -->
     
     <!-- Modal -->
@@ -432,20 +443,21 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h3 class="modal-title" id="myModalLabel">Your Mentor</h4>
+                    <h3>Your Mentor</h3>
                     <div id="modalMentorData"></div>
                     <hr>
-                    <h4 class="modal-title" id="myModalLabel">Your fellow Mentee</h4>
+                    <h3>Your fellow Mentee</h3>
                     <div id="modalMenteeData"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Close</button>
-                    <a href="/"><button type="button" class="btn btn-primary" id="modalToHome">Home</button></a>
+                    <button type="button" class="btn btn-primary" id="modalToHome"><a href="/" id="modalHomeAnchor">Home</a></button>
                 </div>
             </div>
         </div>
     </div>
-        <!-- ============================ -->
+
+
 <!-- =============JS LOGIC=============== -->
 <script type="text/javascript">
 
@@ -503,7 +515,15 @@
         $("#modalMentorData").empty();
         $("#modalMenteeData").empty();
 
-    })
+    });
+
+    $('#myModal').on('hidden.bs.modal', function () {
+        $("#userInputName").val("");
+        $("#userInputProfileImage").val("");
+        $("#userInputCatchphrase").val("");
+        $("#modalMentorData").empty();
+        $("#modalMenteeData").empty();
+    });
 
 
 //global use functions
@@ -593,7 +613,7 @@
            } 
         }
        for (i = (mentteArr.length-1); i>=0; i--) {
-           if ((50 - (userScoreTotal + parseInt(mentteArr[i].totalScore)) <= 2 )) {
+           if (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 2 )||((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-2) )) {
                // use this person
                console.log("2"+i);
                
@@ -601,7 +621,7 @@
            } 
         }
        for (i = (mentteArr.length-1); i>=0; i--) {
-           if ((50 - (userScoreTotal + parseInt(mentteArr[i].totalScore)) <= 5 )) {
+           if (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 5 )||((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-5) )) {
                // use this person
                console.log("3"+i);
                
@@ -609,7 +629,7 @@
            } 
         }
        for (i = (mentteArr.length-1); i>=0; i--) {
-           if ((50 - (userScoreTotal + parseInt(mentteArr[i].totalScore)) <= 10 )) {
+           if (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 10 ||((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-10)) )) {
                // use this person
                console.log("4"+i);
                
@@ -623,17 +643,7 @@
 
 </script>
 
-        <footer class="">
-            <div class="container">
-                <p>
-                    <a href="/api/user_list">API Friends List</a> |
-                    <a href="/">Home Page</a> |
-                    <a href="https://github.com/nick-d-brown">GitHub Repo</a>
-                </p>
-            </div>
-            <p>&copy; 2018 Nick Brown</p>
-        </footer>
-    </div>
+       
   
 </body>
 </html>

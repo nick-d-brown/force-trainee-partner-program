@@ -607,31 +607,37 @@
            if (userScoreTotal === parseInt(mentteArr[i].totalScore)) {
         //    if (userScoreTotal === parseInt(parseInt(mentteArr[i].totalScore))) {
                // use this person
-               console.log("1"+i);
+               console.log("1 logged "+i);
                
                return i;
            } 
         }
-       for (i = (mentteArr.length-1); i>=0; i--) {
-           if (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 2 )||((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-2) )) {
-               // use this person
-               console.log("2"+i);
+       for (i = (mentteArr.length-2); i>=0; i--) {
+           if ((((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-2) ) && ((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 0))|| (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 2)) && ((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= 0)) {
+                console.log(userScoreTotal - parseInt(mentteArr[i].totalScore));
+                   
+            // use this person
+               console.log("2 logged "+i);
                
                return i;
            } 
         }
-       for (i = (mentteArr.length-1); i>=0; i--) {
-           if (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 5 )||((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-5) )) {
-               // use this person
-               console.log("3"+i);
+       for (i = (mentteArr.length-2); i>=0; i--) {
+           if ((((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-5) ) && ((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 0))|| (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 5)) && ((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= 0)) {
+                console.log(userScoreTotal - parseInt(mentteArr[i].totalScore));
+                   
+            // use this person
+               console.log("3 logged "+i);
                
                return i;
            } 
         }
-       for (i = (mentteArr.length-1); i>=0; i--) {
-           if (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 10 ||((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-10)) )) {
-               // use this person
-               console.log("4"+i);
+       for (i = (mentteArr.length-2); i>=0; i--) {
+           if ((((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= (-10) ) && ((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 0))|| (((userScoreTotal - parseInt(mentteArr[i].totalScore)) <= 10)) && ((userScoreTotal - parseInt(mentteArr[i].totalScore)) >= 0)) {
+                console.log(userScoreTotal - parseInt(mentteArr[i].totalScore));
+                   
+            // use this person
+               console.log("4 logged "+i);
                
                return i;
            } 

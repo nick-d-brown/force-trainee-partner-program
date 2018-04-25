@@ -10,12 +10,12 @@
 ## :mag: Table of contents :mag:
 
   
-### [1-Description](https://github.com/nick-d-brown/force-trainee-partner-program#Description)
-### [2-Technologies](https://github.com/nick-d-brown/force-trainee-partner-program#Technologies)
+### [1-Description](https://github.com/nick-d-brown/force-trainee-partner-program#1-description-page_facing_up)
+### [2-Technologies](https://github.com/nick-d-brown/force-trainee-partner-program#2-technologies--computer)
 ### [3-Challenges](https://github.com/nick-d-brown/force-trainee-partner-program#3-challenges-screamboom)
-### [4-Issues](https://github.com/nick-d-brown/force-trainee-partner-program#Issues)
-### [5-Desired Features](https://github.com/nick-d-brown/force-trainee-partner-program#Desired-Features)
-### [6-Contributors](https://github.com/nick-d-brown/force-trainee-partner-program#Contributors)
+### [4-Issues](https://github.com/nick-d-brown/force-trainee-partner-program#4-issues-questionexclamation)
+### [5-Desired Features](https://github.com/nick-d-brown/force-trainee-partner-program#6-contributors-raised_hands)
+### [6-Contributors](https://github.com/nick-d-brown/force-trainee-partner-program#thanks-for-visiting)
 
  ---
 

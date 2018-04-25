@@ -1,31 +1,34 @@
 <!-- This is a basic template for ReadMe files -->
 
 # Star Wars Force Finder
-##Mentor/Mentee Partner Program
+## Mentor/Mentee Partner Program
+
+## https://mighty-dusk-55616.herokuapp.com/
 
   
 
 ## :mag: Table of contents :mag:
 
   
-### [1-Description](https://github.com/nick-d-brown/force-trainee-partner-program/blob/master/#Description)
-### [2-Technologies](https://github.com/nick-d-brown/force-trainee-partner-program/blob/master/#Technologies)
-### [3-Challenges](https://github.com/nick-d-brown/force-trainee-partner-program/blob/master/#Challenges)
-### [4-Issues](https://github.com/nick-d-brown/force-trainee-partner-program/blob/master/#Issues)
-### [5-Desired Features](https://github.com/nick-d-brown/force-trainee-partner-program/blob/master/#Desired-Features)
-### [6-Contributors](https://github.com/nick-d-brown/force-trainee-partner-program/blob/master/#Contributors)
+### [1-Description](https://github.com/nick-d-brown/force-trainee-partner-program#Description)
+### [2-Technologies](https://github.com/nick-d-brown/force-trainee-partner-program#Technologies)
+### [3-Challenges](https://github.com/nick-d-brown/force-trainee-partner-program#3-challenges-screamboom)
+### [4-Issues](https://github.com/nick-d-brown/force-trainee-partner-program#Issues)
+### [5-Desired Features](https://github.com/nick-d-brown/force-trainee-partner-program#Desired-Features)
+### [6-Contributors](https://github.com/nick-d-brown/force-trainee-partner-program#Contributors)
 
  ---
 
 ### 1-Description :page\_facing\_up:
 
-This project is a mentor/mentee partner app that allows users to complete a survey which, based on their answers, will pair them with a force mentor and a fellow mentee. As a customized rendition of a "friend finder" app, this allows users to experience a fun and enjoyable interface and experience, while thier data is handled on the backend. A working version of the app can be found at the link listed above. 
+This project is a mentor/mentee partner app that allows users to complete a survey which, based on their answers, will pair them with a force mentor and a fellow mentee. As a customized rendition of a "friend finder" app, this allows users to experience a fun and enjoyable interface and experience, while their data is handled on the backend. A working version of the app can be found at the link listed above. 
 
-To complete the survey a user must click on the button on the main landing page. Upon clicking, the user is redirected to the survey page where they will be asked star wars themed personalty questions. Based on their ansers a user will be given a score of 10-50 (not seen by the user) to be used to determine whether they are meant for the dark side or the light side of the force.
+To complete the survey a user must click on the button on the main landing page. Upon clicking, the user is redirected to the survey page where they will be asked Star Wars themed personality questions. Based on their answers a user will be given a score of 10-50 (not seen by the user) to be used to determine whether they are meant for the dark side or the light side of the force.
 
-On the backend the server stores the user's name, picture link, and catchphrase. The client side JavaScript then completes an AJAX request from the API's get route for the stored JSON response. upon receipt of the data, the client then checks the users total score against the score of the mentors (5 mentors total) and assigns a mentor to the user. Then the user's score is checked against the scores of the mentees from most recent to least. If no direct score match is found, it then checks for scores within 2 points, then 5, and finally 10. If the user doesn't have a match by then, one of 5 default mentees will match.
+On the backend the server stores the user's name, picture link, and catchphrase. The client-side JavaScript then completes an AJAX request from the API's get route for the stored JSON response. upon receipt of the data, the client then checks the users total score against the score of the mentors (5 mentors total) and assigns a mentor to the user. Then the user's score is checked against the scores of the mentees from most recent to least. If no direct score match is found, it then checks for scores within 2 points, then 5, and finally 10. If the user doesn't have a match by then, one of 5 default mentees will match.
 
 Once a mentor and mentee are matched, a Modal will appear with the user's matched pair. When the user clicks the "Home" button they will return home, and when they click close the inputs reset.
+
 
 > **Note:** Below is an image of the landing page for the project.
 

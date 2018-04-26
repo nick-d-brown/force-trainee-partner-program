@@ -80,6 +80,14 @@ var users =
                             "Just Let it be man.."
                 },
                 {
+                    name: "Qui-Gon Jinn",
+                    picture: "https://lumiere-a.akamaihd.net/v1/images/Qui-Gon-Jinn_d89416e8.jpeg?region=0%2C1%2C1536%2C864&width=768",
+                    listOfScores: [1,2,1,2,1,1,1,1,3,2],
+                    totalScore: 15,
+                    catchPhrase:
+                            "The ability to speak does not make you intelligent."
+                },
+                {
                     name: "Rey",
                     picture: "https://lumiere-a.akamaihd.net/v1/images/rey-main_73d146de.jpeg?region=0%2C0%2C1560%2C878&width=768",
                     listOfScores: [2,2,2,2,2,2,2,2,2,2],
@@ -101,7 +109,7 @@ var users =
                     listOfScores: [4,4,4,4,4,4,4,4,4,4],
                     totalScore: 40,
                     catchPhrase:
-                            "I'm telling mm you made this app"
+                            "I'm telling mom you made this app"
                 },
                 {
                     name: "The guy at the local comic book store",

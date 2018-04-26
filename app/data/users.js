@@ -104,6 +104,16 @@ var users =
                             "Listen, I think I know a thing or two about how to make money. OK?"
                 },
                 {
+                    name: "Boba Fett",
+                    picture: "https://cdn.shopify.com/s/files/1/0784/0133/products/Boba_Fett_2_2bd57c36-2d60-4b7f-a8cb-1c0c785a6d71_1024x1024.jpg?v=1454096516",
+                    listOfScores: [3,3,3,3,4,5,3,4,3,4],
+                    totalScore: 35,
+                    catchPhrases:
+                        [
+                            "He's no good to me dead."
+                        ]
+                },
+                {
                     name: "Your Little Sister",
                     picture: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Hello_kitty_character_portrait.png/200px-Hello_kitty_character_portrait.png",
                     listOfScores: [4,4,4,4,4,4,4,4,4,4],
